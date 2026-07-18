@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# package-lock.json is intentionally not committed. npm's cross-platform
+# handling of optional native deps (@emnapi/*, @next/swc-*) produces a
+# lockfile that fails `npm ci` on Cloudflare's Linux builder. Without a
+# committed lockfile, Cloudflare runs `npm install`, which resolves the
+# correct platform binaries. Local dev still generates its own lockfile.
+/package-lock.json

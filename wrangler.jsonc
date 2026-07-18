@@ -1,0 +1,12 @@
+{
+  // Cloudflare Workers config for a static-only site.
+  // `next build` (output: "export") produces ./out, which is served as
+  // static assets — there is no Worker script (no `main`).
+  "name": "polaris",
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": "./out",
+    // unknown paths fall back to the exported 404 page
+    "not_found_handling": "404-page"
+  }
+}

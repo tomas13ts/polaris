@@ -1,5 +1,8 @@
 import { ImageResponse } from 'next/og'
 
+// Prerender the generated icon at build time so it works with output: "export"
+export const dynamic = 'force-static'
+
 export const size = {
   width: 64,
   height: 64,
