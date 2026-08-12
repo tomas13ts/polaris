@@ -99,10 +99,10 @@ export function Contact() {
               <div>
                 <p className="font-medium text-white">Email</p>
                 <a
-                  href="mailto:info@polaris.enterprises.com"
+                  href="mailto:info@polaris-enterprises.com"
                   className="mt-1 inline-block text-sm text-neutral-400 transition-colors hover:text-indigo-400"
                 >
-                  info@polaris.enterprises.com
+                  info@polaris-enterprises.com
                 </a>
               </div>
             </div>

@@ -35,10 +35,10 @@ export function Footer() {
               <p className="flex items-center gap-2">
                 <Mail className="size-4 shrink-0 text-neutral-500" />
                 <a
-                  href="mailto:info@polaris.enterprises.com"
+                  href="mailto:info@polaris-enterprises.com"
                   className="transition-colors hover:text-indigo-400"
                 >
-                  info@polaris.enterprises.com
+                  info@polaris-enterprises.com
                 </a>
               </p>
             </div>
