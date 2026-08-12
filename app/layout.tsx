@@ -14,9 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  // TODO: replace with the real production domain once available
-  metadataBase: new URL("https://polaris-enterprises.vercel.app"),
-  title: "Polaris Enterprises LLC | Technology Solutions for the Future",
+  metadataBase: new URL("https://polaris-enterprises.com"),
+  title: "Polaris Enterprises Group LLC | Technology Solutions for the Future",
   description:
     "Polaris Enterprises builds custom software, cloud infrastructure and artificial intelligence solutions that transform businesses. Results-driven technology consulting.",
   keywords: [
@@ -32,14 +31,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "/",
-    siteName: "Polaris Enterprises LLC",
-    title: "Polaris Enterprises LLC | Technology Solutions for the Future",
+    siteName: "Polaris Enterprises Group LLC",
+    title: "Polaris Enterprises Group LLC | Technology Solutions for the Future",
     description:
       "Custom software, cloud infrastructure and AI applied to business — from strategy to execution, focused on measurable results.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Polaris Enterprises LLC | Technology Solutions for the Future",
+    title: "Polaris Enterprises Group LLC | Technology Solutions for the Future",
     description:
       "Custom software, cloud infrastructure and AI applied to business.",
   },

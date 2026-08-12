@@ -79,7 +79,11 @@ export function Footer() {
 
         <div className="mt-12 border-t border-white/10 pt-8">
           <p className="text-center text-sm text-neutral-500">
-            © 2026 Polaris Enterprises LLC. All rights reserved.
+            © 2026 Polaris Enterprises Group LLC. All rights reserved.
+          </p>
+          <p className="mt-2 text-center text-xs text-neutral-600">
+            Polaris Enterprises Group LLC · 30 N Gould St, Ste R, Sheridan, WY
+            82801, United States
           </p>
         </div>
       </div>
