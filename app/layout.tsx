@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { SmoothScrollProvider } from "@/components/smooth-scroll-provider";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,15 +14,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://polaris-enterprises.com"),
-  title: "Polaris Enterprises Group LLC | Technology Solutions for the Future",
+  title: "Polaris | AI, Software & Digital Commerce",
   description:
-    "Polaris Enterprises builds custom software, cloud infrastructure and artificial intelligence solutions that transform businesses. Results-driven technology consulting.",
+    "A new orbit for your business. Polaris Enterprises Group LLC builds AI, custom software and digital commerce experiences around your business.",
   keywords: [
     "Polaris Enterprises",
     "digital transformation",
     "software development",
-    "cloud",
-    "DevOps",
+    "online store development",
+    "workflow automation",
     "artificial intelligence",
     "technology consulting",
   ],
@@ -32,15 +31,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
     siteName: "Polaris Enterprises Group LLC",
-    title: "Polaris Enterprises Group LLC | Technology Solutions for the Future",
+    title: "Polaris | A new orbit for your business",
     description:
-      "Custom software, cloud infrastructure and AI applied to business — from strategy to execution, focused on measurable results.",
+      "Artificial intelligence, custom software and digital commerce. Human ambition meets intelligent possibilities.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Polaris Enterprises Group LLC | Technology Solutions for the Future",
+    title: "Polaris | A new orbit for your business",
     description:
-      "Custom software, cloud infrastructure and AI applied to business.",
+      "Artificial intelligence, custom software and digital commerce, built around your business.",
   },
 };
 
@@ -54,11 +53,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
     >
-      {/* CSS scroll-smooth is intentionally omitted — Lenis (in
-          SmoothScrollProvider) owns smooth scrolling and the two conflict */}
-      <body className="min-h-full flex flex-col bg-black">
-        <SmoothScrollProvider>{children}</SmoothScrollProvider>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

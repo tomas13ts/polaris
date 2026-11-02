@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Polaris — A new orbit
 
-## Getting Started
+A dark, scroll-driven website for Polaris Enterprises Group LLC. Built with Next.js, React and Three.js, exported as static assets for the existing Netlify project.
 
-First, run the development server:
+## Local development
 
-```bash
+```sh
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Production
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The static output is `out/`. `netlify.toml` declares the build command and publish directory. The existing Netlify project deploys the `main` branch.
 
-## Learn More
+## Experience
 
-To learn more about Next.js, take a look at the following resources:
+- One original GPU particle scene morphs through a galaxy, connected AI agents, software modules and a storefront.
+- Geometry is generated locally: no third-party 3D embeds, models, textures or video downloads.
+- The scene adapts particle count and rendering resolution for mobile, suspends rendering off-screen or in a hidden tab, respects reduced motion, and includes an animation pause control.
+- A CSS illustration remains visible if WebGL is unavailable. All business content and navigation work independently of the 3D scene.
+- Service tabs support keyboard navigation; enquiries use a native accessible dialog with validated inputs.
+- The enquiry form opens a prefilled email draft to `info@polaris-enterprises.com`. The visitor sends it from their email app. No server submission or simulated success message is used.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Main files
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `components/polaris-experience.tsx`: content, navigation, service explorer and enquiry dialog.
+- `components/orbit-scene.tsx`: procedural geometry, GPU morphing, rendering and lifecycle cleanup.
+- `app/globals.css`: responsive visual identity and motion preferences.
+- `app/layout.tsx`, `app/icon.tsx`, `app/opengraph-image.tsx`: metadata and brand assets.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The previous site remains in Git history. The previous production revision before this redesign was `25db14c34f97e4d121dffb1628ade10f5f4b51d3`.
